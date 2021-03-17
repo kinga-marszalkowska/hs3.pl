@@ -1,4 +1,4 @@
-name: "Prerender events"
+name: "Fetch calendar events"
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 jobs:
   backup:
     runs-on: ubuntu-latest
-    name: Prerender
+    name: Prerender calendar
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +36,7 @@ jobs:
           mv build ${REPO}/calendar
           cd $REPO
           git add calendar
+
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
