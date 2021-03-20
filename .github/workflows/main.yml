@@ -33,7 +33,7 @@ jobs:
           cd $_
           git checkout prerendering
           ./build.sh
-          mv build ${REPO}/calendar
+          mv build/index.html ${REPO}/calendar/
           cd $REPO
           git add calendar
 
