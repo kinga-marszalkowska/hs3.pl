@@ -1,0 +1,14 @@
+name: "Update financial dashboard"
+
+on:
+  push:
+  schedule:
+    - cron: "0 4 * * 0"
+
+steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-python@v2
+    with:
+      python-version: '3.9'
+  - run: cd finanse; pip install -r requirements.txt
+  - run cd finanse; python dashboard.py
