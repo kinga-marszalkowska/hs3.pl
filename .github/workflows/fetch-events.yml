@@ -1,11 +1,7 @@
 name: "Fetch calendar events"
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    -   cron: "0 4 * * *"
+  workflow_dispatch:
 
 jobs:
   backup:
