@@ -16,7 +16,7 @@ jobs:
           python-version: '3.9'
       - name: Update dashboard
         run: |
-          cd finanse
+          cd automation/finanse
           pip install -r requirements.txt
           python dashboard.py
           git add index.html
