@@ -1,7 +1,7 @@
 ---
 title: ML FUN
 tags: ["hs3", "machine learning", "akademia hs3"]
-featureImage: images/wydarzenia/ml-fun.png
+featureImage: /images/wydarzenia/ml-fun.png
 ---
 
 # Machine Learning FUN

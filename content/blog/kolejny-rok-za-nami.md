@@ -1,7 +1,7 @@
 ---
 title: "Kolejny rok za nami"
 date: 2021-12-31T16:08:38+01:00
-featureImage: images/blog/blog-thumb-2.jpg
+featureImage: /images/blog/blog-thumb-2.jpg
 tags: ["hackerspace", "hs3", "podsumowanie"]
 ---
 

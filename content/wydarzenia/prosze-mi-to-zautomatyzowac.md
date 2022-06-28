@@ -1,7 +1,7 @@
 ---
 title: Proszę mi to zautomatyzować
 tags: ["hs3", "akademia hs3", "testowanie", "automatyzacja", "mastermind"]
-featureImage: images/wydarzenia/ptmz.png
+featureImage: /images/wydarzenia/ptmz.png
 ---
 
 Spotkanie w formule [HS3 Academy](/tags/akademia-hs3), czyli uczymy się razem: wszyscy od wszystkich.

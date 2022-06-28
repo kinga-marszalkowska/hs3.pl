@@ -1,7 +1,7 @@
 ---
 title: Space Smasher 9001
 tags: ["hs3", "HS3 JAM", "gry", "WebGL"]
-featureImage: images/projekty/space-smasher-9001.jpg
+featureImage: /images/projekty/space-smasher-9001.jpg
 ---
 
 Autorzy: Grzegorz "Hagis" Kupczyk

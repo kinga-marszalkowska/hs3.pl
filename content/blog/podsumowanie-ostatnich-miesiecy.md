@@ -1,7 +1,7 @@
 ---
 title: "Podsumowanie ostatnich miesięcy"
 date: 2022-04-25T22:08:38+01:00
-featureImage: images/blog/blog-thumb-4.jpg
+featureImage: /images/blog/blog-thumb-4.jpg
 tags: ["hackerspace", "hs3", "przestrzeń"]
 ---
 

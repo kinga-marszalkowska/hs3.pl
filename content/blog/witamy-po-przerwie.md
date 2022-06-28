@@ -1,7 +1,7 @@
 ---
 title: "Witamy po przerwie!"
 date: 2021-11-12T15:30:38+01:00
-featureImage: images/blog/blog-thumb-1.jpg
+featureImage: /images/blog/blog-thumb-1.jpg
 tags: ["uszanowanko", "cześć", "hs3"]
 ---
 
