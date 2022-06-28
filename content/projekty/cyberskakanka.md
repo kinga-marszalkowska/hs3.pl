@@ -1,7 +1,7 @@
 ---
 title: "Cyberskakanka"
 tags: ["hackerspace", "gry", "hardware", "arduino", "Raspberry Pi", "LED", "WS2812", "Cyberskakanka", "Festiwal Światła"]
-featureImage: images/projekty/cyberskakanka.jpg
+featureImage: /images/projekty/cyberskakanka.jpg
 ---
 
 Instalacja wykonana pierwotnie na [Festiwal Światła 2021](/tags/festiwal-światła/).

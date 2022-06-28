@@ -1,7 +1,7 @@
 ---
 title: "🤔💭💡🎾Idea Squash"
 tags: ["hs3", "pomysły", "Idea Squash"]
-featureImage: images/wydarzenia/idea-squash.jpg
+featureImage: /images/wydarzenia/idea-squash.jpg
 ---
 
 # Idea Squash

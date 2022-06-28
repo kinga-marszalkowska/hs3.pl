@@ -1,7 +1,7 @@
 ---
 title: Żeton
 tags: ["software", "autyzm", "ADHD", "dobrostan"]
-featureImage: images/projekty/zeton.jpg
+featureImage: /images/projekty/zeton.jpg
 ---
 
 Aplikacja wspierająca dzieci z wyzwaniami takimi jak: autyzm w tym zespół aspergera, zachowania opozycjno-buntownicze, ADHD i inne.

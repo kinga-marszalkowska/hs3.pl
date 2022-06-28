@@ -1,7 +1,7 @@
 ---
 title: "Lato wszędzie"
 date: 2022-06-23T13:08:38+01:00
-featureImage: images/blog/blog-thumb-5.jpg
+featureImage: /images/blog/blog-thumb-5.jpg
 tags: ["hackerspace", "hs3", "podsumowanie", "Festiwal Światła", "Hack4Change"]
 ---
 

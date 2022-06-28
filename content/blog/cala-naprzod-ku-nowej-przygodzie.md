@@ -1,7 +1,7 @@
 ---
 title: "Cała naprzód ku nowej przygodzie"
 date: 2022-02-22T11:14:38+01:00
-featureImage: images/blog/blog-thumb-3.jpg
+featureImage: /images/blog/blog-thumb-3.jpg
 tags: ["hackerspace", "hs3", "przestrzeń"]
 ---
 
