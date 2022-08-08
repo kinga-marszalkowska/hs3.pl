@@ -20,3 +20,16 @@ Założenia projektowe:
 W przyszłości, robot będzie rozwijany poprzez wyposażanie o dodatkowe funkcje dobierane zależnie od kierunku jego dotychczasowego rozwoju.
 
 Główny Project Engineer to 3dmagik a główny Software Engineer to DoomHammer. Kierunek rozwoju robota będzie wynikał z wielu czynników ujawniających się w toku postępu projektu, lecz decydujące zdanie mają dwie wyżej wymienione osoby. Będą oni podejmować decyzje zapobiegające stagnacji działań, kroczeniu ślepymi tropami i niewłaściwemu wykorzystaniu zasobów.
+
+## Raport ze spotkania #1 (20.07.2022):
+
+Podczas spotkania, częściowo zapoznaliśmy się z [projektem ROS](http://docs.ros.org), z którego będziemy korzystać w trakcie tworzenia robota. Przyjrzeliśmy się też niektórym częściom mechanicznym i elektronicznym, których planujemy użyć do jego budowy.
+
+Na mikrokomputerze *Raspberry Pi 4B 8GB RAM* działającym wraz z kartą SD Samsung EVO Plus 64GB, skonfigurowaliśmy system Ubuntu 22.04 [wgrywając na niego biblioteki ROS dystrybucji „Humble Hawksbill](http://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html).
+
+Następnie, wykonaliśmy kolejno ćwiczenia z działu „Beginner: CLI tools”:
+- [Using turtlesim and rqt](http://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)
+- [Understanding nodes](http://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
+- [Understanding topics](http://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
+
+Podczas następnego spotkania, planowane jest wykonanie dalszych ćwiczeń z działu [„Beginner: CLI tools”](http://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html).
