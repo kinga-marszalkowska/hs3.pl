@@ -1,6 +1,6 @@
 ---
 title: "Podsumowanko sierpnia"
-date: 2022-09-05T23:08:38+01:00
+date: 2022-09-05T08:08:38+01:00
 featureImage: /images/blog/dachshund.jpg
 tags: ["hackerspace", "hs3", "przestrzeń", "wydarzenia"]
 ---
