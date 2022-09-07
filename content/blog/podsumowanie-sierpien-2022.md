@@ -27,5 +27,5 @@ tags: ["hackerspace", "hs3", "przestrzeń", "wydarzenia"]
 - Późna jesień to tradycyjnie [MusicJam](https://musicjam.pl/) czyli hackathon muzyczno-technologiczny
 - Zaczęliśmy przymiarki do Projektu Lucienne czyli systemu biblioteczno-inwentarzowego
 - Firma [Icetek](https://icetek.io/) postanowiła nas sponsorować, dzięki za zaufanie
-- Zgłosiliśmy się do udziału w programie Seniorzy i Makerzy organizowanego przez Fundację Stocznia
+- Zgłosiliśmy się do udziału w programie Seniorzy i Makerzy organizowanego przez [Fundację Stocznia](https://stocznia.org.pl/)
 - Będziemy organizować warsztaty dla dzieci i młodzieży w ramach Meet and Code w październiku
