@@ -23,7 +23,7 @@ tags: ["hackerspace", "hs3", "przestrzeń", "wydarzenia"]
   - moduły LED P3 i P10
   
 - Warsztaty z robienia LEDonów (neonów LED) niebawem
-- Konferencja 3d3miasto zgodnie z planem w tym roku się nie odbędzie, ale w mniejszej wersji spotkamy się na Mini-3d3miasto
+- Konferencja [3d3miasto](/wydarzenia/3d3miasto/) zgodnie z planem w tym roku się nie odbędzie, ale w mniejszej wersji spotkamy się na [Mini-3d3miasto](https://www.meetup.com/hs3city/events/287533196/)
 - Późna jesień to tradycyjnie MusicJam czyli hackathon muzyczno-technologiczny
 - Zaczęliśmy przymiarki do Projektu Lucienne czyli systemu biblioteczno-inwentarzowego
 - Firma Icetek postanowiła nas sponsorować, dzięki za zaufanie
