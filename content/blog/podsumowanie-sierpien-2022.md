@@ -12,7 +12,7 @@ tags: ["hackerspace", "hs3", "przestrzeń", "wydarzenia"]
 - Wzięliśmy udział w [World Wide Open Hackerspace Day](https://makezine.com/article/maker-news/world-wide-open-hackerspace-day-is-coming-august-27th/)
 - [Tydzień Programisty](https://tydzienprogramisty.pl/) rusza w tym tygodniu
 - Proszę mi to zautomatyzować ma prężną grupę uczestników
-- Hackabuto pomaga nam uczyć się Robot OS w formie Hackademy
+- [Hackabuto](/projekty/hackabuto/) pomaga nam uczyć się [Robot OS](https://www.ros.org/) w formie [Hackademy](/tags/akademia-hs3/)
 
 - Pojawiło się trochę nowego sprzętu:
   - drukarka laserowa przydatna przy tworzeniu własnych PCB
