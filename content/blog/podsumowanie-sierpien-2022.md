@@ -28,4 +28,4 @@ tags: ["hackerspace", "hs3", "przestrzeń", "wydarzenia"]
 - Zaczęliśmy przymiarki do Projektu Lucienne czyli systemu biblioteczno-inwentarzowego
 - Firma [Icetek](https://icetek.io/) postanowiła nas sponsorować, dzięki za zaufanie
 - Zgłosiliśmy się do udziału w programie Seniorzy i Makerzy organizowanego przez [Fundację Stocznia](https://stocznia.org.pl/)
-- Będziemy organizować warsztaty dla dzieci i młodzieży w ramach Meet and Code w październiku
+- Będziemy organizować warsztaty dla dzieci i młodzieży w ramach [Meet and Code](https://meet-and-code.org/pl/pl/explore) w październiku
