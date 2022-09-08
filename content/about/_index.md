@@ -4,11 +4,11 @@ date: 2022-01-08T10:41:03+06:00
 subTitle: >
         Misją Hackerspace Trójmiasto jest stworzenie otwartej przestrzeni technologicznej i budowanie społeczności ludzi wspierających się w rozwoju oraz dzielących wiedzą w przyjaznej atmosferze.
 sliderImage:
-  - image: "images/stor/story-01.jpg"
-  - image: "images/stor/story-02.jpg"
-  - image: "images/stor/story-03.jpg"
-  - image: "images/stor/story-04.jpg"
-  - image: "images/stor/story-05.jpg"
+  - image: "/images/stor/story-01.jpg"
+  - image: "/images/stor/story-02.jpg"
+  - image: "/images/stor/story-03.jpg"
+  - image: "/images/stor/story-04.jpg"
+  - image: "/images/stor/story-05.jpg"
 url: /o-nas
 ---
 

@@ -3,7 +3,7 @@ title : "<h1> Hackerspace Trójmiasto</h1>"
 enable: true
 subtitle: >
         Przyjazna przestrzeń technologiczna.
-heroBGimg: "images/hero/hero-bg.png"
+heroBGimg: "/images/hero/hero-bg.png"
 heroVideo : "https://vimeo.com/722466146?autoplay=1&rel=0"
 herosVideoDesc: "<span> <strong>Hackerspace Trójmiasto w </strong> 150 sekund</span>"
 ---
