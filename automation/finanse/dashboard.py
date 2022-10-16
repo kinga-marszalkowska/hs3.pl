@@ -43,14 +43,11 @@ def export_dashboard_cashflow(source_path, offline=False, standalone=False):
         total_balance.append(balance)
 
     df["Balance"] = total_balance
-    current_balance = df["Balance"][len(df["Balance"]) - 1]
-    print(current_balance)
-
-    
+        
     # Plot settings
     title = 'Hackerspace Trójmiasto Cashflow'
     current_balance = df["Balance"][len(df["Balance"]) - 1]
-    print(current_balance)
+    
     x = df['Miesiąc']
     fig = go.Figure()
 
