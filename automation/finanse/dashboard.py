@@ -20,6 +20,9 @@ def export_dashboard_cashflow(source_path, offline=False, standalone=False):
 
     source_file = os.path.join(source_path, "finanse.csv")
     output_file = os.path.join(source_path, "cashflow_plot.html")
+    
+    print(os.path.exists("../../layouts/shortcodes/finanse.html"))
+    
 
     include_plotlyjs = 'cdn'
     if offline:
@@ -27,12 +30,27 @@ def export_dashboard_cashflow(source_path, offline=False, standalone=False):
         
     # Load data
     df = pd.read_csv(source_file, dtype={'Miesiąc':str})
+    
     # Preprocessing
     df['Miesiąc'] = pd.to_datetime(df['Miesiąc'], yearfirst=True, format="%Y.%m")
     df.sort_values(by=['Miesiąc'], ascending=True, inplace=True)
+
+    df["Zysk"] = df.Przychody-df.Rozchody
+    total_balance = []
+    balance = 0
+    for i in range(len(df["Zysk"])):
+        balance += df["Zysk"][i]        
+        total_balance.append(balance)
+
+    df["Balance"] = total_balance
+    current_balance = df["Balance"][len(df["Balance"]) - 1]
+    print(current_balance)
+
     
     # Plot settings
     title = 'Hackerspace Trójmiasto Cashflow'
+    current_balance = df["Balance"][len(df["Balance"]) - 1]
+    print(current_balance)
     x = df['Miesiąc']
     fig = go.Figure()
 
@@ -43,13 +61,13 @@ def export_dashboard_cashflow(source_path, offline=False, standalone=False):
                          marker_color='lightslategray', 
                          hovertemplate = "<b>Expenses</b>: %{y:.2f} PLN<extra></extra>"))
     fig.add_trace(go.Scatter(x=x, 
-                             y=df.Przychody-df.Rozchody, 
+                             y=df["Balance"], 
                              name='Net balance', 
                              marker_color='darkslategrey', 
                              line={'width': 1},
                              hovertemplate = "<b>Net balance</b>: %{y:.2f} PLN<extra></extra>", 
                              mode='lines+markers'))
-    fig.update_layout(barmode='relative', title_text=title, yaxis_title="PLN")
+    fig.update_layout(barmode='relative', title_text=title + " -- Bilans: " + str(current_balance) + "PLN" , yaxis_title="PLN")
     fig.update_xaxes(dtick='M1')
     
     fig.write_html(output_file, include_plotlyjs=include_plotlyjs, full_html=standalone)
@@ -66,6 +84,9 @@ def update_html(source_path):
     soup_index('h2', {'id': 'przepływ'})[0].next_sibling.next_sibling.replace_with(soup_cashflow)
 
     with open(os.path.join(source_path, "index.html"), mode="w", encoding="utf-8") as output:
+        output.write(str(soup_index))
+    
+    with open(os.path.join(source_path, "../../layouts/shortcodes/finanse.html"), mode='w', encoding="utf-8") as output:
         output.write(str(soup_index))
 
 
