@@ -95,7 +95,6 @@ def update_html(source_path):
         encoding="utf-8",
     ) as cashflow:
         soup_cashflow = BeautifulSoup(cashflow, "html.parser")
-        
 
         with open(
             os.path.join(source_path, "../../layouts/shortcodes/finanse.html"),
