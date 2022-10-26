@@ -20,10 +20,7 @@ def export_dashboard_cashflow(source_path, offline=False, standalone=False):
 
     source_file = os.path.join(source_path, "finanse.csv")
     output_file = os.path.join(source_path, "cashflow_plot.html")
-    
-    print(os.path.exists("../../layouts/shortcodes/finanse.html"))
-    
-
+      
     include_plotlyjs = 'cdn'
     if offline:
         include_plotlyjs = True
@@ -77,13 +74,14 @@ def update_html(source_path):
 
     with open(os.path.join(source_path, "cashflow_plot.html"), encoding="utf-8") as cashflow:
         soup_cashflow = BeautifulSoup(cashflow, 'html.parser')
+        
+        with open(os.path.join(source_path, "../../layouts/shortcodes/finanse.html"), mode='w', encoding="utf-8") as output:
+            output.write(str(soup_cashflow))
 
     soup_index('h2', {'id': 'przepływ'})[0].next_sibling.next_sibling.replace_with(soup_cashflow)
+   
 
     with open(os.path.join(source_path, "index.html"), mode="w", encoding="utf-8") as output:
-        output.write(str(soup_index))
-    
-    with open(os.path.join(source_path, "../../layouts/shortcodes/finanse.html"), mode='w', encoding="utf-8") as output:
         output.write(str(soup_index))
 
 
