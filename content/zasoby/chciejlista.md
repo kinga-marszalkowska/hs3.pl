@@ -5,11 +5,12 @@ tags: ["hackerspace", "chciejlista"]
 
 Lista sprzętu który przyda się w HS3. Jeśli posiadasz coś z listy i chcesz się tym podzielić, zapraszamy do przekazania danej rzeczy do Hackerspace Trójmiasto
 
-- Sznurki/nici
-- obcinaczki Xytronic
-- wkrętarka
-- [Prototyping Wire Spool Set - 6 Spool– The Pi Hut](https://thepihut.com/products/prototyping-wire-spool-set)
-- [POWERMAT Zaciskarka Praska Tulejek Końcówek 5 Matryc 8w1](https://www.olx.pl/d/oferta/powermat-zaciskarka-praska-tulejek-koncowek-5-matryc-8w1-CID628-IDN2Wg3.html)
+- [ ] Sznurki/nici
+- [ ] obcinaczki Xytronic
+- [ ] wkrętarka
+- [ ] [Prototyping Wire Spool Set - 6 Spool– The Pi Hut](https://thepihut.com/products/prototyping-wire-spool-set)
+- [ ] [POWERMAT Zaciskarka Praska Tulejek Końcówek 5 Matryc 8w1](https://www.olx.pl/d/oferta/powermat-zaciskarka-praska-tulejek-koncowek-5-matryc-8w1-CID628-IDN2Wg3.html)
+- [ ] [wózek na tacki projektowe](https://allegro.pl/oferta/revolution-wozek-do-transportu-blach-15x-600x400mm-12589252737)
 
 Sprzęt który został już zorganizowany:
 - [X] Zszywacz
