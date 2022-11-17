@@ -11,6 +11,10 @@ Lista sprzętu który przyda się w HS3. Jeśli posiadasz coś z listy i chcesz 
 - [ ] [Prototyping Wire Spool Set - 6 Spool– The Pi Hut](https://thepihut.com/products/prototyping-wire-spool-set)
 - [ ] [POWERMAT Zaciskarka Praska Tulejek Końcówek 5 Matryc 8w1](https://www.olx.pl/d/oferta/powermat-zaciskarka-praska-tulejek-koncowek-5-matryc-8w1-CID628-IDN2Wg3.html)
 - [ ] [wózek na tacki projektowe](https://allegro.pl/oferta/revolution-wozek-do-transportu-blach-15x-600x400mm-12589252737)
+- [ ] zestaw kluczy (jeden z):
+  - https://allegro.pl/oferta/wera-joker-11-zestaw-kluczy-z-etui-grzechotka-12572655933
+  - https://allegro.pl/oferta/zestaw-kluczy-plasko-oczkowych-12155221068?navCategoryId=147647
+  - https://allegro.pl/oferta/hazet-zestaw-kluczy-plasko-oczk-17-czesciowy-din3-12676987664?navCategoryId=147647
 
 Sprzęt który został już zorganizowany:
 - [X] Zszywacz
