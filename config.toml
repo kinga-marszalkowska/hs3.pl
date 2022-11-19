@@ -2,104 +2,175 @@ languageCode = 'pl-pl'
 paginate = 9
 theme = "coHub"
 title = 'Hackerspace Trójmiasto'
- 
-[Menu]
-  # Main Menu
-  [[menu.Main]]
-  name = "O nas"
-  url= "/o-nas"
-  weight = 1
-  [[menu.Main]]
-  name = "Wydarzenia"
-  url= "/wydarzenia"
-  weight = 1
-  [[menu.Main]]
-  name = "Projekty"
-  url= "/projekty"
-  weight = 3
-  [[menu.Main]]
-  name = "Blog"
-  url= "/blog"
-  weight = 4
-  [[menu.Main]]
-  name = "Członkostwo"
-  url= "/zasoby/czlonkostwo"
-  weight = 5
-  [[menu.Main]]
-  name = "Zasoby"
-  url= "/zasoby"
-  weight = 6
-  [[menu.Main]]
-  name = "FAQ"
-  url= "/#faq"
-  weight = 7
-  [[menu.Main]]
-  name = "Kontakt"
-  url= "/#contact"
-  weight = 8
+DefaultContentLanguage = "pl"
 
-  # Sitemap Menu
-  [[menu.sitemap]]
-  name = "Privacy Policy"
-  url = "/privacy/"
-  weight = 1
-  [[menu.sitemap]]
-  name = "Terms"
-  url = "/terms/"
-  weight = 2
+[languages]
+[languages.pl]
+languageName = "🇵🇱"
+contentDir = 'content/pl'
+[languages.pl.Menu]
+# Main Menu
+[[languages.pl.menu.Main]]
+name = "O nas"
+url= "/o-nas"
+weight = 1
+[[languages.pl.menu.Main]]
+name = "Wydarzenia"
+url= "/wydarzenia"
+weight = 2
+[[languages.pl.menu.Main]]
+name = "Projekty"
+url= "/projekty"
+weight = 3
+[[languages.pl.menu.Main]]
+name = "Blog"
+url= "/blog"
+weight = 4
+[[languages.pl.menu.Main]]
+name = "Członkostwo"
+url= "/zasoby/czlonkostwo"
+weight = 5
+[[languages.pl.menu.Main]]
+name = "Zasoby"
+url= "/zasoby"
+weight = 6
+[[languages.pl.menu.Main]]
+name = "FAQ"
+url= "/#faq"
+weight = 7
+[[languages.pl.menu.Main]]
+name = "Kontakt"
+url= "/#contact"
+weight = 8
 
-[params]
-  aboutPageURL = "blog"
-  contactLink = "/contact"
-  copyright = "© {year} Hackerspace Trójmiasto"
-  googleAnalytics = ""
-  logo = "/images/logo.png"
-  footerlogo = "/images/logo.png"
-  footerDescription = "Przyjdź i zbuduj coś z nami"
+# Sitemap Menu
+[[languages.pl.menu.sitemap]]
+name = "Privacy Policy"
+url = "/privacy/"
+weight = 1
+[[languages.pl.menu.sitemap]]
+name = "Terms"
+url = "/terms/"
+weight = 2
 
-  [params.address]
-  address = "al. Wojska Polskiego 41<br>80-268 Gdańsk"
-  email = "kontakt@hs3.pl"
-  openingDesc = "Otwarte całą dobę dla osób z kluczem."
-  openingHours = "Jeśli nie masz klucza [zapytaj na Discord](https://hs3.pl/join) czy ktoś jest w środku."
-  phone = "+48 661 691 133"
+[languages.pl.params]
+aboutPageURL = "blog"
+contactLink = "/contact"
+copyright = "© {year} Hackerspace Trójmiasto"
+googleAnalytics = ""
+logo = "/images/logo.png"
+footerlogo = "/images/logo.png"
+footerDescription = "Przyjdź i zbuduj coś z nami"
 
-  [params.map]
-  APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
-  latitude = "54.3896193"
-  longitude = "18.58178"
-  pinImage = "/images/pin.png"
+[languages.pl.params.address]
+address = "al. Wojska Polskiego 41<br>80-268 Gdańsk"
+email = "kontakt@hs3.pl"
+openingDesc = "Otwarte całą dobę dla osób z kluczem."
+openingHours = "Jeśli nie masz klucza [zapytaj na Discord](https://hs3.pl/join) czy ktoś jest w środku."
+phone = "+48 661 691 133"
 
-  # Socail icons
-  [[params.social]]
-  icon = "ti-facebook"
-  url = "https://www.facebook.com/hackerspacetrojmiasto"
-  weight = 1
-  [[params.social]]
-  icon = "ti-twitter-alt"
-  url = "https://twitter.com/hs3city"
-  weight = 2
-  [[params.social]]
-  icon = "ti-linkedin"
-  url = "https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto/"
-  weight = 2
-  [[params.social]]
-  icon = "ti-user"
-  url = "https://hs3.pl/join"
-  weight = 3
-  [[params.social]]
-  icon = "ti-youtube"
-  url = "https://www.youtube.com/channel/UC1MjdZvgtGZwSAaveL-Z8CA"
-  weight = 4
-  [[params.social]]
-  icon = "ti-video-camera"
-  url = "https://www.twitch.tv/hs3city"
-  weight = 5  
-  [[params.social]]
-  icon = "ti-github"
-  url = "https://github.com/hs3city"
-  weight = 6
-  [[params.social]]
-  icon = "ti-wallet"
-  url = "https://patronite.pl/hs3/description"
-  weight = 7
+[languages.en]
+title = "Hackerspace Trójmiasto (Three-city)"
+contentDir = 'content/en'
+languageName = "🇬🇧"
+[languages.en.Menu]
+# Main Menu
+[[languages.en.menu.Main]]
+name = "About us"
+url= "/about-us"
+weight = 1
+[[languages.en.menu.Main]]
+name = "Events"
+url= "/events"
+weight = 2
+[[languages.en.menu.Main]]
+name = "Projects"
+url= "/projects"
+weight = 3
+[[languages.en.menu.Main]]
+name = "Blog"
+url= "/blog"
+weight = 4
+[[languages.en.menu.Main]]
+name = "Membership"
+url= "/resources/membership"
+weight = 5
+[[languages.en.menu.Main]]
+name = "Resources"
+url= "/resources"
+weight = 6
+[[languages.en.menu.Main]]
+name = "FAQ"
+url= "/#faq"
+weight = 7
+[[languages.en.menu.Main]]
+name = "Contact"
+url= "/#contact"
+weight = 8
+
+# Sitemap Menu
+[[languages.en.menu.sitemap]]
+name = "Privacy Policy"
+url = "/privacy/"
+weight = 1
+[[languages.en.menu.sitemap]]
+name = "Terms"
+url = "/terms/"
+weight = 2
+
+[languages.en.params]
+aboutPageURL = "blog"
+contactLink = "/contact"
+copyright = "© {year} Hackerspace Trójmiasto"
+googleAnalytics = ""
+logo = "/images/logo.png"
+footerlogo = "/images/logo.png"
+footerDescription = "Come and build with us"
+
+[languages.en.params.address]
+address = "al. Wojska Polskiego 41<br>80-268 Gdańsk"
+email = "kontakt@hs3.pl"
+openingDesc = "Open 24/7 for members with a key."
+openingHours = "For members without key and non-members: [ask on Discord](https://hs3.pl/join) if someone is there (in English or Polish)."
+phone = "+48 661 691 133"
+
+[params.map]
+APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
+latitude = "54.3896193"
+longitude = "18.58178"
+pinImage = "/images/pin.png"
+
+
+# Socail icons
+[[params.social]]
+icon = "ti-facebook"
+url = "https://www.facebook.com/hackerspacetrojmiasto"
+weight = 1
+[[params.social]]
+icon = "ti-twitter-alt"
+url = "https://twitter.com/hs3city"
+weight = 2
+[[params.social]]
+icon = "ti-linkedin"
+url = "https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto/"
+weight = 2
+[[params.social]]
+icon = "ti-user"
+url = "https://hs3.pl/join"
+weight = 3
+[[params.social]]
+icon = "ti-youtube"
+url = "https://www.youtube.com/channel/UC1MjdZvgtGZwSAaveL-Z8CA"
+weight = 4
+[[params.social]]
+icon = "ti-video-camera"
+url = "https://www.twitch.tv/hs3city"
+weight = 5  
+[[params.social]]
+icon = "ti-github"
+url = "https://github.com/hs3city"
+weight = 6
+[[params.social]]
+icon = "ti-wallet"
+url = "https://patronite.pl/hs3/description"
+weight = 7

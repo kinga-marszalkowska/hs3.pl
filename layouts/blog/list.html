@@ -29,14 +29,10 @@
 <section class="blog">
   <div class="container">
     <div class="row">
-      {{ range (.Paginate ($preferredPages.Get "pages")).Pages }}
+      {{ range (.Paginate (sort ($preferredPages.Get "pages") "Date" "desc")).Pages }}
       <div class="col-lg-4">
         <article class="blog-post">
-          {{ if .Params.featureImage }}
           <img src="{{ .Params.featureImage | absURL }}" alt="blog-images">
-          {{ else }}
-          <img src="/images/zasoby/null.jpg" alt="blog-images">
-          {{ end }}
           <div class="blog-content">
             <h3><a href="{{ .Permalink }}">{{ .Title}}</a></h3>
             {{ if (ne .Language.Lang $.Page.Language.Lang) }} 

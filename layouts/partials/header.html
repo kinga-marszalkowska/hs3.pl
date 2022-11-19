@@ -2,7 +2,7 @@
 <header class="header">
   <nav class="main-nav navbar navbar-expand-lg {{ if not $.IsHome }}main-nav-colored{{ end }}">
     <div class="container-fluid">
-      <a href="{{.Site.BaseURL}}" class="navbar-brand">
+      <a href="{{absLangURL "/"}}" class="navbar-brand">
         <img src="{{ .Site.Params.logo | absURL}}" alt="site-logo" />
       </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
@@ -24,9 +24,15 @@
           {{ end }}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-             <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
+              <a class="nav-link scroll-to" href="{{ .URL | relLangURL }}">{{.Name}}</a>
           </li>
           {{end}}
+          {{ range $.Site.Home.AllTranslations }}
+          {{ if ne $.Site.Language.Lang .Language.Lang }}
+            {{ $translation := index (where $.Page.Translations "Language.Lang" .Language.Lang) 0 }}
+          <li class="nav-item"><a class="nav-link scroll-to" href="{{ default (printf "/%s/no-translation" .Language.Lang) $translation.Permalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ end }}
+        {{ end }}
         </ul>
       </div>
     </div>

@@ -27,10 +27,21 @@
   </div>
 </section>
 
+{{ $allPages := where (where .Site.AllPages "Type" "==" $.Page.Type) "Kind" "page" }}
+{{ $pageByTranslationKey := newScratch }}
+{{range $allPages }}
+{{ $pageByTranslationKey.Add .TranslationKey (slice .) }}
+{{end}}
+{{ $preferredPages:= newScratch }}
+{{ range $key,$pages := $pageByTranslationKey.Values }}
+  {{ $preferredPage := index (where $pages "Language.Lang" $.Page.Language.Lang | default $pages) 0 }}
+  {{ $preferredPages.Add "pages" (slice $preferredPage) }}
+{{ end }}
+
 <section class="blog">
   <div class="container">
     <div class="row">
-      {{ range .Paginator.Pages }}
+      {{ range (.Paginate ($preferredPages.Get "pages")).Pages }}
       <div class="col-lg-4">
         <article class="blog-post">
           {{ if .Params.featureImage }}
@@ -40,6 +51,9 @@
           {{ end }}
           <div class="blog-content">
             <h3><a href="{{ .Permalink }}">{{ .Title}}</a></h3>
+            {{ if (ne .Language.Lang $.Page.Language.Lang) }} 
+              <p>(Only in {{ .Language.LanguageName }})</p>
+            {{ end }}
             <p> {{truncate 100 .Summary}} </p>
             <a class="more" href="{{ .Permalink }}">Read more <span>⟶</span></a>
           </div>
