@@ -9,7 +9,6 @@ sliderImage:
   - image: "/images/stor/story-03.jpg"
   - image: "/images/stor/story-04.jpg"
   - image: "/images/stor/story-05.jpg"
-url: /en/about-us
 ---
 
 ## Hackerspace is a space

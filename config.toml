@@ -77,7 +77,7 @@ languageName = "🇬🇧"
 # Main Menu
 [[languages.en.menu.Main]]
 name = "About us"
-url= "/about-us"
+url= "/about"
 weight = 1
 [[languages.en.menu.Main]]
 name = "Events"
