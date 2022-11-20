@@ -18,6 +18,10 @@
         <ul class="navbar-nav ml-auto">
           {{ $currentPage := . }}
           {{ $menu := .Site.Menus.main}}
+          {{ if eq $menu nil }}
+            {{/* if the menu is empty, something went wrong (see commit message), so we fail for now, until we come up with a better plan */}}
+            {{ .Site.ASSERT_MENU_IS_NOT_EMPTY_FAILURE_this_should_crash }}
+          {{ end }}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
              <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
