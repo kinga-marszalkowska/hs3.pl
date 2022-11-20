@@ -30,7 +30,7 @@
           {{ range $.Site.Home.AllTranslations }}
           {{ if ne $.Site.Language.Lang .Language.Lang }}
             {{ $translation := index (where $.Page.Translations "Language.Lang" .Language.Lang) 0 }}
-          <li class="nav-item"><a class="nav-link scroll-to" href="{{ default (printf "%s/no-translation" $.Site.LanguagePrefix) $translation.Permalink }}">{{ .Language.LanguageName }}</a></li>
+          <li class="nav-item"><a class="nav-link scroll-to language-switch" href="{{ default (printf "%s/no-translation" $.Site.LanguagePrefix) $translation.Permalink }}">{{ .Language.LanguageName }}</a></li>
             {{ end }}
         {{ end }}
         </ul>
