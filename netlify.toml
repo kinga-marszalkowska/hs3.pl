@@ -1,9 +1,9 @@
 [build]
 publish = "public"
-command = "hugo version; hugo mod get; hugo --minify; cp _redirects public/"
+command = 'hugo version; hugo mod get; count=0; until hugo --minify || (( count++ >= 10 )); do echo "\n\n------------\nRETRYING\n--------\n\n"; done; cp _redirects public/'
 
 [build.environment]
 HUGO_VERSION = "0.99.1"
 
 [context.deploy-preview]
-command = "hugo version; hugo mod get; hugo --minify -b $DEPLOY_PRIME_URL; cp _redirects public/"
+command = 'hugo version; hugo mod get; count=0; until hugo --minify -b $DEPLOY_PRIME_URL || (( count++ >= 10 )); do echo "\n\n------------\nRETRYING\n--------\n\n"; done; cp _redirects public/'
