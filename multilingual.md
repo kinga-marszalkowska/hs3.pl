@@ -1,0 +1,82 @@
+# Making the site multilingual
+
+Even though Hugo supports multilingual feautures out of the box, getting them to work properly is a bit of a challenge.
+Especially if your theme has not support for it (as our theme doesn't).
+
+When making the site multilingual I had some requirements / nice to have:
+- Every page needs to show a language switcher flag for the non-shown language
+- The flag needs to take you to the same content in the other language (so not just the home page)
+- If the other language is not available, it should show an error message.
+- The top-level pages should be translated, except for those on which we expect regular changes (since it may be hard to convince people to change both language versions at the same time).
+- List items (Events / Resources / Projects / Blog Posts) can be made in either language, or in both. The 
+- The lists in both languages should show the same items. Ideally in the current language, but else with a small message that the content is available only in the other language.
+- The same should be true for other lists (like on the homepage, or tag lists)
+- It should be made easy to add languages in the future.
+- Both languages are treated the same (although PL is default at the moment). So in the future, content could exist in only Polish, only English, or both, and the system should keep working.
+- Maintaining the site should not be extremely much harder.
+- Tags (for now) are not translated. If we decided to translate tags, it does mean that we lose the possibility to show different language content on the same tag page.It might be an idea to start using only english tags in the future (since it's more likely Polish people will understand the english tags, than the other way around).
+
+The structure chosen was as follows:
+- No prefix in the URL for Polish, prefix for English. Polish is also therefore the default language.
+- Separate menu lists per language. This was done (rather than using ids and i18n lookups) to allow language-specific links (e.g: `/o-nas` and `/en/about`).
+- The sections on the homepage are based on `/data/*.yml` files. By adding code at the top of each `partial`, the data in the `/data/` dir and the `/data/LANG/` dir is merged (where `LANG` is `pl` or `en`), for the appropriate language:
+```
+{{ $data_nolang := .Site.Data }}
+{{ $data_lang := index .Site.Data .Site.Language.Lang }}
+{{ $data := merge $data_nolang $data_lang }}
+{{with index $data.hero}}
+ ....
+{{end}}
+```
+- There are content directories for both languages: `/content/pl/` and `/content/en/`. **The filenames in these directories should match**, because this is how Hugo knows what PL page matches which EN page. For example, in both PL and EN there is a `/content/{pl,en}/zasoby/czlonkostwo.md` file. In the English directory, it contains front-matter saying `url: /en/resources/membership`, so that the English URL is created, but the filename cannot be changed! If you really want to use different filenames, supposedly you could use the TranslationKey property in the front-matter, but I don't think you want to....
+- The flag-icon will always link to the same page (same filename) in the other language. If the other language doesn't exist, it will link to the `/no-translation` page, saying that the content is not available in the other language.
+- For the lists, we needed to do some magic/hacking. Normally the pages for the list are just available by default in `.Pagination.Pages`. This gives you only content in the current language, which might mean that you miss a lot of content (and makes the pages look empty). So we manually go through all pages, and filter the ones we want, group by TranslationKey, then select the best possible language (note: if we ever introduce a third language, some work will be needed here, because you might want to show that a page is available in both Polish and Klingon, but not in English (BTW: it might be interesting to see what percentage of English people could decide which is Polish and which is Klingon, when read out loud....)):
+```
+{{ $allPages := where (where .Site.AllPages "Type" "==" $.Page.Type) "Kind" "page" }} {{/* contains all blog items */}}
+{{ $pageByTranslationKey := newScratch }}  {{/* will contain a mapping from TranslationKey to a list of pages with that key */}}
+{{range $allPages }}
+{{ $pageByTranslationKey.Add .TranslationKey (slice .) }}
+{{end}}
+{{ $preferredPages:= newScratch }}
+{{ range $key,$pages := $pageByTranslationKey.Values }}
+  {{ $preferredPage := index (where $pages "Language.Lang" $.Page.Language.Lang | default $pages) 0 }} {{/* get from the list of pages with a TranslationKey the one in current language, or else just the first one */}}
+  {{ $preferredPages.Add "pages" (slice $preferredPage) }}
+{{ end }}
+...
+      {{ range (.Paginate (sort ($preferredPages.Get "pages") "Date" "desc")).Pages }}  {{/* sort pages however you want and paginate */}}
+      ...
+            {{ if (ne .Language.Lang $.Page.Language.Lang) }} 
+              <p>(Only in {{ .Language.LanguageName }})</p>
+            {{ end }}
+```
+- For tag-lists it's much the same, only the selection is a bit different
+```
+{{ $allPages := where (where $.Site.AllPages "Params.tags" "intersect" (slice .Data.Term)) "Kind" "page" }}
+```
+
+
+## TODO / wishlist
+- Custom tag for linking in markdown files, that links to the correct language if availble, else the other language with a small note that content is not available in current language.
+- Make the menu nicer. Right now we have two menus, one for EN and one for PL. They are both the same, except for the names of the items, and the urls. The names of the items can be fixed through i18n module. The links aught to be fixable though the same system as custom link tag above.
+- When clicking the language switch on a page that is not available in this language, the other page should:
+    - Offer a link to Google-translate the original content.
+    - Make sure that if you press the language switcher again, the original page comes back.
+- When you went on a link to other-language content, it would be nice to have a one-click "Google-translate this page" option.
+
+## Known issues (not sure if they can be fixed or not)
+
+- For pages with [fragments](https://en.wikipedia.org/wiki/URI_fragment), the switch-language button doesn't work. It will switch the language to the same URL without the fragment (which makes sense, since the link is created statically). Of course we could use JS to fix this, but do we really want to?
+It's an issue when clicking FAQ or Kontakt, and then switching language.
+- When clicking on language switcher for a page that doesn't exits, you get to `/no-translation` which shows a message. If you switch again, you go to `/no-translation` in the other language, not back to the original page.
+- Tag-pages work the same as lists: they are created with all content, and show a warning if the content is not available in your language. However tag lists pages are only created for those tags that are available in your language, so if there are no english blogs tagged with "hs3" (but there are Polish ones) then there is no `/en/tags/hs3` page (and pressing the translate toggle on the (Polish) `/tags/hs3` page will result into a `/no-translation` redirect.
+- Articles writen in two languages, have twice the front matter. This is generally a good idea (other title / image), but also means that you may have different tags in different languages. Probably not exactly what you would want...
+
+# How to practically work with it:
+## Updating an existing page
+- Update like you would normally do
+- Check if the page is translated (also available in the `/content/en` directory); if so, also update there (or find someone to do this for you).
+
+## Writing new "article" (event / projekty / blog post / resources document)
+- Write in the language you like (just make sure you put it in the right subdir for your language).
+- Decide if you need a translation; if so, make one :) and put it in the other subdir using the same name. If not, no problem, it will still appear on both language versions.
+- **do not** translate the tag names (for now).
