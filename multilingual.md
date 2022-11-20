@@ -18,7 +18,7 @@ When making the site multilingual I had some requirements / nice to have:
 
 The structure chosen was as follows:
 - No prefix in the URL for Polish, prefix for English. Polish is also therefore the default language.
-- Separate menu lists per language. This was done (rather than using ids and i18n lookups) to allow language-specific links (e.g: `/o-nas` and `/en/about`).
+- ~Separate menu lists per language. This was done (rather than using ids and i18n lookups) to allow language-specific links (e.g: `/o-nas` and `/en/about`).~ single menu now with PageRef
 - The sections on the homepage are based on `/data/*.yml` files. By adding code at the top of each `partial`, the data in the `/data/` dir and the `/data/LANG/` dir is merged (where `LANG` is `pl` or `en`), for the appropriate language:
 ```
 {{ $data_nolang := .Site.Data }}
@@ -57,7 +57,7 @@ The structure chosen was as follows:
 
 ## TODO / wishlist
 - Custom tag for linking in markdown files, that links to the correct language if availble, else the other language with a small note that content is not available in current language.
-- Make the menu nicer. Right now we have two menus, one for EN and one for PL. They are both the same, except for the names of the items, and the urls. The names of the items can be fixed through i18n module. The links aught to be fixable though the same system as custom link tag above.
+- ~Make the menu nicer. Right now we have two menus, one for EN and one for PL. They are both the same, except for the names of the items, and the urls. The names of the items can be fixed through i18n module. The links aught to be fixable though the same system as custom link tag above. ~ --> done
 - When clicking the language switch on a page that is not available in this language, the other page should:
     - Offer a link to Google-translate the original content.
     - Make sure that if you press the language switcher again, the original page comes back.

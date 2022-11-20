@@ -8,50 +8,6 @@ DefaultContentLanguage = "pl"
 [languages.pl]
 languageName = "🇵🇱"
 contentDir = 'content/pl'
-[languages.pl.Menu]
-# Main Menu
-[[languages.pl.menu.Main]]
-name = "O nas"
-url= "/o-nas"
-weight = 1
-[[languages.pl.menu.Main]]
-name = "Wydarzenia"
-url= "/wydarzenia"
-weight = 2
-[[languages.pl.menu.Main]]
-name = "Projekty"
-url= "/projekty"
-weight = 3
-[[languages.pl.menu.Main]]
-name = "Blog"
-url= "/blog"
-weight = 4
-[[languages.pl.menu.Main]]
-name = "Członkostwo"
-url= "/zasoby/czlonkostwo"
-weight = 5
-[[languages.pl.menu.Main]]
-name = "Zasoby"
-url= "/zasoby"
-weight = 6
-[[languages.pl.menu.Main]]
-name = "FAQ"
-url= "/#faq"
-weight = 7
-[[languages.pl.menu.Main]]
-name = "Kontakt"
-url= "/#contact"
-weight = 8
-
-# Sitemap Menu
-[[languages.pl.menu.sitemap]]
-name = "Privacy Policy"
-url = "/privacy/"
-weight = 1
-[[languages.pl.menu.sitemap]]
-name = "Terms"
-url = "/terms/"
-weight = 2
 
 [languages.pl.params]
 aboutPageURL = "blog"
@@ -73,54 +29,10 @@ phone = "+48 661 691 133"
 title = "Hackerspace Trójmiasto (Three-city)"
 contentDir = 'content/en'
 languageName = "🇬🇧"
-[languages.en.Menu]
-# Main Menu
-[[languages.en.menu.Main]]
-name = "About us"
-url= "/about"
-weight = 1
-[[languages.en.menu.Main]]
-name = "Events"
-url= "/events"
-weight = 2
-[[languages.en.menu.Main]]
-name = "Projects"
-url= "/projects"
-weight = 3
-[[languages.en.menu.Main]]
-name = "Blog"
-url= "/blog"
-weight = 4
-[[languages.en.menu.Main]]
-name = "Membership"
-url= "/resources/membership"
-weight = 5
-[[languages.en.menu.Main]]
-name = "Resources"
-url= "/resources"
-weight = 6
-[[languages.en.menu.Main]]
-name = "FAQ"
-url= "/#faq"
-weight = 7
-[[languages.en.menu.Main]]
-name = "Contact"
-url= "/#contact"
-weight = 8
-
-# Sitemap Menu
-[[languages.en.menu.sitemap]]
-name = "Privacy Policy"
-url = "/privacy/"
-weight = 1
-[[languages.en.menu.sitemap]]
-name = "Terms"
-url = "/terms/"
-weight = 2
 
 [languages.en.params]
 aboutPageURL = "blog"
-contactLink = "/contact"
+contactLink = "/en/contact"
 copyright = "© {year} Hackerspace Trójmiasto"
 googleAnalytics = ""
 logo = "/images/logo.png"
@@ -140,6 +52,50 @@ latitude = "54.3896193"
 longitude = "18.58178"
 pinImage = "/images/pin.png"
 
+[Menu]
+# Main Menu
+[[menu.Main]]
+identifier = "about-us"
+pageref = "/about"
+weight = 1
+[[menu.Main]]
+identifier = "events"
+pageref = "/wydarzenia"
+weight = 2
+[[menu.Main]]
+identifier = "projects"
+pageref = "/projekty"
+weight = 3
+[[menu.Main]]
+identifier = "blogs"
+pageref = "/blog"
+weight = 4
+[[menu.Main]]
+identifier = "membership"
+pageref = "/zasoby/czlonkostwo"
+weight = 5
+[[menu.Main]]
+identifier = "resources"
+pageref = "/zasoby"
+weight = 6
+[[menu.Main]]
+identifier = "FAQ"
+url = "/#faq"
+weight = 7
+[[menu.Main]]
+identifier = "contact"
+url = "/#contact"
+weight = 8
+
+# Sitemap Menu
+[[menu.sitemap]]
+name = "Privacy Policy"
+url = "/privacy/"
+weight = 1
+[[menu.sitemap]]
+name = "Terms"
+url = "/terms/"
+weight = 2
 
 # Socail icons
 [[params.social]]

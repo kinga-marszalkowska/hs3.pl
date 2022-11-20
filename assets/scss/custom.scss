@@ -1,4 +1,10 @@
-.main-nav .navbar-nav .nav-item .nav-link.language-switch {
-    font-size: 1.4em;
-    transform: translateY(-.2em);
+.main-nav .navbar-nav .nav-item .nav-link {
+    &::first-letter {
+        // capitalize on whole string makes "about us" to "About Us". We want "About us"
+        text-transform: uppercase;
+    }
+    &.language-switch {
+        font-size: 1.4em;
+        transform: translateY(-.2em);
+    }
 }

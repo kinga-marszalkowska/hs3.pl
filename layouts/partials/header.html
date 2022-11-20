@@ -24,7 +24,7 @@
           {{ end }}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-              <a class="nav-link scroll-to" href="{{ .URL | relLangURL }}">{{.Name}}</a>
+              <a class="nav-link scroll-to" href="{{ .URL | relLangURL }}">{{i18n .Identifier | default .PageRef }}</a>
           </li>
           {{end}}
           {{ range $.Site.Home.AllTranslations }}
