@@ -2,7 +2,7 @@
 title: "Członkostwo Hackerspace Trójmiasto"
 ---
 
-Hackerspace Trójmiasto jest organizacją non-profit utrzymywaną z dobrowolnych składek członkowskich. Zrzucamy się by opłacić wynajem przestrzeni, zakupić [potrzebny sprzęt](/zasoby/sprzet) i móc realizować [stypendia HS3](/zasoby/stypendia-hs3) oraz ciekawe [wydarzenia](/wydarzenia).
+Hackerspace Trójmiasto jest organizacją non-profit utrzymywaną z dobrowolnych składek członkowskich. Zrzucamy się by opłacić wynajem przestrzeni, zakupić {{% link ref=/zasoby/chciejlista %}}potrzebny sprzęt{{% /link %}} i móc realizować {{% link ref=/zasoby/stypendia-hs3 %}}stypendia HS3{{% /link %}} oraz ciekawe {{% link ref=/wydarzenia %}}wydarzenia{{% /link %}}.
 
 Wspierając Hackerspace Trójmiasto pomagasz w demokratyzacji wiedzy, upowszechniania sztuki i rzemiosła. Wspierasz działania dziesiątek osób, które zmieniają swoje lokalne społeczności na lepsze. Twoje wsparcie staje się motorem tych zmian. Wspólnie działamy na rzecz naszego otoczenia.
 
