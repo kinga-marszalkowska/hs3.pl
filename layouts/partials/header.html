@@ -20,7 +20,7 @@
           {{ $menu := .Site.Menus.main}}
           {{ if eq $menu nil }}
             {{/* if the menu is empty, something went wrong (see commit message), so we fail for now, until we come up with a better plan */}}
-            {{ .Site.ASSERT_MENU_IS_NOT_EMPTY_FAILURE_this_should_crash }}
+            {{ errorf "No menu detected. Failing the build, please try again. This is a known race condition. If in `hugo serve` mode, re-save `config.toml` or restart server" }}
           {{ end }}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
