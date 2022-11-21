@@ -4,7 +4,7 @@ url: /en/resources/membership
 ---
 
 Hackerspace Trójmiasto is a non-profit organisation, supported by membership fees.
-We use the money to pay for the rent of the space, purchase the [necessary equipment](/en/resources/equipment), create [HS3 scholar ships](/en/resources/scholarship-hs3) and organise [interesting events](/en/events).
+We use the money to pay for the rent of the space, purchase the [necessary equipment (only in 🇵🇱)](/zasoby/chciejlista/), create [HS3 scholar ships](/en/resources/scholarship-hs3) and organise [interesting events](/en/events).
 
 By supporting Hackerspace Trójmiasto, you help the democratisation of knowledge and disemination of skills in arts and craftsof skills in arts and crafts.
 You support the work of dozens of people how change their local communities for the better.
