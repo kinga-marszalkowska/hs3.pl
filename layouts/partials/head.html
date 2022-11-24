@@ -13,6 +13,8 @@
     {{$style :=  resources.Get "scss/critical.scss" | resources.ToCSS | resources.Minify }}
     <link href="{{ $style.Permalink }}" rel="stylesheet" />
   
+    {{$style :=  resources.Get "scss/custom.scss" | resources.ToCSS | resources.Minify }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet" />
 
     {{"<!-- Favicon -->" | safeHTML}}
     <link rel="shortcut icon" href="{{"/images/favicon.ico" | absURL}}" type="image/x-icon" />

@@ -1,4 +1,7 @@
-{{with .Site.Data.cta}}
+{{ $data_nolang := .Site.Data }}
+{{ $data_lang := index .Site.Data .Site.Language.Lang }}
+{{ $data := merge $data_nolang $data_lang }}
+{{with index $data.cta}}
 {{ if .enable }}
 <section class="cta">
   <div class="container">

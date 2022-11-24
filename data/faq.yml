@@ -1,20 +1,4 @@
 ---
 enable: true
 title: "Frequently Asked Questions"
-faq:
-  - question: "Q. Czym są Hackerspace?"
-    answer: >
-            Za [hackerspaces.org](https://hackerspaces.org/): Hackerspace to fizyczne miejsca obsługiwane przez społeczność, w których ludzie dzielą zainteresowanie majsterkowaniem przy technologii, spotykają się i pracują nad swoimi projektami oraz uczą się od siebie nawzajem.
-  - question: "Q. Czym jest Hackerspace Trójmiasto?"
-    answer: >
-            Hackerspace Trójmiasto to otwarta przestrzeń technologiczna i społeczność ludzi wspierających się w rozwoju oraz dzielących wiedzą w przyjaznej atmosferze. Nasza fizyczna siedziba mieści się przy [al. Wojska Polskiego 41 w Gdańsku](https://www.openstreetmap.org/search?whereami=1&query=54.38971%2C18.58163#map=19/54.38971/18.58163). Nasz Metaverse mieści się [na Discord](https://hs3.pl/join).
-  - question: "Q. Jak mogę uzyskać członkostwo?"
-    answer: >
-            Dowiedz się więcej w sekcji [członkostwo](/zasoby/czlonkostwo).
-  - question: "Q. Kiedy mogę odwiedzić Hackerspace Trójmiasto?"
-    answer: >
-            Hackerspace Trójmiasto czynny jest całą dobę dla osób z kluczem. Jeśli nie masz klucza, [odwiedź nasz Metaverse](https://hs3.pl/join) i zapytaj czy ktoś jest w środku.
-  - question: "Q. Jaka jest odpowiedź na wielkie pytanie o życie, wszechświat i całą resztę?"
-    answer: >
-            42.
 ---

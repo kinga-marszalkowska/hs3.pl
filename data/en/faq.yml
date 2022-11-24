@@ -1,0 +1,27 @@
+---
+faq:
+  - question: "Q. What is a  Hackerspace?"
+    answer: >
+            From [hackerspaces.org](https://hackerspaces.org/): are community-operated physical places, where people share their interest in tinkering with technology, meet and work on their projects, and learn from each other.
+  - question: "Q. What is Hackerspace Trójmiasto?"
+    answer: >
+            Hackerspace Trójmiasto (Tricity) Hackerspace Tricity is an open technological space and a community of people supporting themselves in development and sharing knowledge in a friendly atmosphere. Our physical headquarters is located at [al. Wojska Polskiego 41 w Gdańsku](https://www.openstreetmap.org/search?whereami=1&query=54.38971%2C18.58163#map=19/54.38971/18.58163). Our Metaverse is located [on Discord](https://hs3.pl/join).
+  - question: 'Q. Why the name "Hackerspace Trójmiasto?"'
+    answer: >
+      Trójmiasto is the Polish word for Three cities and refers to the metropolitan area of the cities Gdansk, Gdynia and Sopot.
+      For the not Polish speakers; the ó is pronounced as the oo in 🦘.
+  - question: "Q. How can I become a member?"
+    answer: >
+            Learn more in the [membership](/resources/memberships) section.
+  - question: "Q. When can I visit Hackerspace Trójmiasto?"
+    answer: >
+            Members with a key can visit Hackerspace Trójmiasto 24/7.
+            If you don't have a key, [visit our Discord](https://hs3.pl/join) and ask if someone can let you in.
+  - question: "Q. Can I speak English at Hackerspace Trójmiasto?"
+    answer: >
+        Most of the members are Polish, however recently more and more non-Polish speakers join.
+        Generally we get along splendidly with a mix of Polish and English.
+  - question: "Q. What is the Answer to the Ultimate Question of Life, the Universe, and Everything?"
+    answer: >
+            42.
+---

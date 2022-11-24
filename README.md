@@ -7,3 +7,5 @@ In order to run the website locally:
 - Do a `git submodule update --init`
 - `hugo serve`
 - Go to http:/localhost:1313/
+
+Also read the [I18n notes](i18n.md).
