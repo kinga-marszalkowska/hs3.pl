@@ -1,4 +1,7 @@
-{{with .Site.Data.faq}}
+{{ $data_nolang := .Site.Data }}
+{{ $data_lang := index .Site.Data .Site.Language.Lang }}
+{{ $data := merge $data_nolang $data_lang }}
+{{with index $data.faq}}
 {{if .enable}}
 <section class="faq" id="faq">
   <div class="container">
