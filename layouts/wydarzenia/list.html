@@ -51,11 +51,16 @@
           {{ end }}
           <div class="blog-content">
             <h3><a href="{{ .Permalink }}">{{ .Title}}</a></h3>
-            {{ if (ne .Language.Lang $.Page.Language.Lang) }} 
-              <p>(Only in {{ .Language.LanguageName }})</p>
-            {{ end }}
             <p> {{truncate 100 .Summary}} </p>
             <a class="more" href="{{ .Permalink }}">Read more <span>⟶</span></a>
+            {{ if (ne .Language.Lang $.Page.Language.Lang) }} 
+            <p>
+              (only in {{ .Language.LanguageName }}; or
+              <a href="http://translate.google.com/translate?{{(slice "js" "n" "sl" .Language.Lang "tl" site.Language.Lang "u" (.Permalink | absURL)) | querify | safeURL}}">
+              <img alt="Google translate" src="/images/google-translate.png">
+              </a>)
+            </p>
+            {{ end }}
           </div>
         </article>
       </div>

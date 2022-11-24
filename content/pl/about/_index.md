@@ -28,11 +28,11 @@ Oferujemy otwartą przestrzeń wymiany wiedzy. Inżynierowie, artyści, pisarze 
 
 Staramy się pomagać osobom stawiającym pierwsze kroki w świecie nowych technologii, a także wspieramy ludzi w samoedukacji i rozwoju osobistym. Pokazujemy różne ścieżki i możliwości, uczymy jak zarządzać czasem i uczyć się skutecznie, a gdy tylko możemy realizujemy pro społeczne projekty.
 
-Czy to żarty? Nie! Spójrz na listę wszystkich [projektów](/projekty) i [działań](/wydarzenia), które przeprowadziliśmy od 2016 roku.
+Czy to żarty? Nie! Spójrz na listę wszystkich {{% link ref=/projekty %}}projektów{{% /link %}} i {{% link ref=/wydarzenia %}}działań{{% /link %}}, które przeprowadziliśmy od 2016 roku.
 
 ## Hackerspace to zaufanie
 
-Wiemy jak ważna jest przejrzystość. Nasz budżet jest prowadzony w sposób otwarty od początku naszego działania, więc każdy wie dokładnie, na co przeznaczane są jego pieniądze. [Wgląd do budżetu](/finanse) jest zawsze dostępy.
+Wiemy jak ważna jest przejrzystość. Nasz budżet jest prowadzony w sposób otwarty od początku naszego działania, więc każdy wie dokładnie, na co przeznaczane są jego pieniądze. {{% link ref=/zasoby/finanse %}}Wgląd do budżetu{{% /link %}} jest zawsze dostępy.
 
 Hackerspace Trójmiasto współpracuje z wieloma organizacjami i fundacjami, jesteśmy wspomagani prawnie i księgowo przez Fundację CODE:ME.
 

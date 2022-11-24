@@ -27,11 +27,11 @@ We offer an open space for knowledge exchange. Engineers, artists, writers and a
 
 We try to help people taking their first steps in the world of new technologies, and we also support people in self-education and personal development. We show different paths and opportunities, teach how to manage time and learn effectively. Whenever possible, we implement social projects.
 
-Is it a joke? No! Take a look at the list of all the [projects](projects) and [activities](events) we have carried out since 2016.
+Is it a joke? No! Take a look at the list of all the {{% link ref=/projekty %}}projects{{%/link%}} and {{% link ref="/wydarzenia" %}}activities{{%/link%}} we have carried out since 2016.
 
 ## Hackerspace is trust
 
-We know how important transparency is. Our budget has been run openly since the beginning of our activity, so everyone knows exactly what their money is spent on. [Access to the budget (🇵🇱)](/finanse) is always available.
+We know how important transparency is. Our budget has been run openly since the beginning of our activity, so everyone knows exactly what their money is spent on. {{%link ref=/zasoby/finanse %}}Access to the budget{{% /link %}} is always available.
 
 Hackerspace Trójmiasto cooperates with many organizations and foundations, we are legally and accountingly supported by the CODE:ME Foundation.
 
