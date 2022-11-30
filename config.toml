@@ -92,10 +92,6 @@ weight = 8
 name = "Privacy Policy"
 url = "/privacy/"
 weight = 1
-[[menu.sitemap]]
-name = "Terms"
-url = "/terms/"
-weight = 2
 
 # Socail icons
 [[params.social]]
