@@ -22,7 +22,7 @@ Some of the third party services that we use (like Discord and Patronite) have t
 ## Website
 When you visit the hs3.pl website, we do not put cookies on your computer or track you in any other way.
 
-The website is hosted by Netlify; please contact [their privacy team](https://www.netlify.com/privacy/) if you have any concerns or questions about the data they collect.
+The website is hosted by Netlify; please see [their page](https://www.netlify.com/gdpr-ccpa/) to check how to exercise your rights.
 
 The Google Translate ![Google translate](/images/google-translate.png) feature on some pages (if the page is not available in your own language) redirects you to the Google Translate website.
 Please check the [privacy information on this page](https://support.google.com/translate/answer/10400210) to understand how this impacts your privacy.
